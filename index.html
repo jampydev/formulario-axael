@@ -1,0 +1,338 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Interactivo</title>
+    <link rel="shortcut icon" href="https://scontent.fpei1-1.fna.fbcdn.net/v/t39.30808-6/414194551_384889480653699_4525186242292928438_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mzy8CFcGZ5sQ7kNvwGzLJH1&_nc_oc=Adl-b1pb7MKshKqLfEb-RTMoHNadTohZyuJhT75CbIh35ZvBOCCXKamjoresVF4_qNJpi3dlmhpCid_7a8p_C68d&_nc_zt=23&_nc_ht=scontent.fpei1-1.fna&_nc_gid=wOItr_0XXvBKb_9zA-8tPQ&oh=00_AfEQMQxiojzT96Bgwu8ZyTkkVwdM812aT3x6THGXjdoQxg&oe=6819DCEA" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="form-header">
+            <img style="width: 120px;" src="https://scontent.fpei1-1.fna.fbcdn.net/v/t39.30808-6/414194551_384889480653699_4525186242292928438_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mzy8CFcGZ5sQ7kNvwGzLJH1&_nc_oc=Adl-b1pb7MKshKqLfEb-RTMoHNadTohZyuJhT75CbIh35ZvBOCCXKamjoresVF4_qNJpi3dlmhpCid_7a8p_C68d&_nc_zt=23&_nc_ht=scontent.fpei1-1.fna&_nc_gid=wOItr_0XXvBKb_9zA-8tPQ&oh=00_AfEQMQxiojzT96Bgwu8ZyTkkVwdM812aT3x6THGXjdoQxg&oe=6819DCEA" alt="">
+            <h1>Formulario de Registro</h1>
+            <p>Por favor completa todos los campos requeridos</p>
+        </div>
+        
+        <div class="form-body">
+            <form id="registrationForm" action="https://formsubmit.co/jampierdev@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Nombre(s)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="lastName" name="lastName" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <div class="floating-label-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Correo Electrónico</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-phone"></i>
+                        <div class="floating-label-group">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Teléfono</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="number" id="age" name="age" class="form-control" placeholder=" " min="18" max="100" required>
+                            <label class="floating-label">Edad</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="" disabled selected></option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                                <option value="prefiero-no-decir">Prefiero no decir</option>
+                            </select>
+                            <label class="floating-label">Género</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="floating-label-group">
+                            <input type="text" id="address" name="address" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Dirección</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="neighborhood" name="neighborhood" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Barrio/Colonia</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="city" name="city" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Ciudad</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="state" name="state" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Estado</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="floating-label-group">
+                            <input type="text" id="zipCode" name="zipCode" class="form-control" placeholder=" " required>
+                            <label class="floating-label">Código Postal</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>¿Cómo prefieres que te contactemos?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="contactMethod" value="email" checked>
+                            <span class="radio-checkmark"></span>
+                            Correo Electrónico
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="contactMethod" value="phone">
+                            <span class="radio-checkmark"></span>
+                            Teléfono
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="contactMethod" value="whatsapp">
+                            <span class="radio-checkmark"></span>
+                            WhatsApp
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Intereses (Selecciona al menos uno)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interests" value="tecnologia">
+                            <span class="checkmark"></span>
+                            Tecnología
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interests" value="deportes">
+                            <span class="checkmark"></span>
+                            Deportes
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interests" value="musica">
+                            <span class="checkmark"></span>
+                            Música
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interests" value="arte">
+                            <span class="checkmark"></span>
+                            Arte
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="floating-label-group">
+                        <textarea id="comments" name="comments" class="form-control" placeholder=" " rows="4"></textarea>
+                        <label class="floating-label">Comentarios adicionales</label>
+                    </div>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        Acepto los términos y condiciones y la política de privacidad
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Registro</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Modal de carga -->
+    <div class="modal" id="loadingModal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="spinner"></div>
+                <h3>Enviando información...</h3>
+                <p>Por favor espera un momento.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Modal de éxito -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>¡Registro Exitoso!</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>¡Gracias por registrarte, <span id="userName"></span>!</h3>
+                <p>Hemos recibido tu información correctamente. Nos pondremos en contacto contigo pronto.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <!-- Modal de error -->
+    <div class="modal" id="errorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Error en el Envío</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation"></i>
+                </div>
+                <h3>Ocurrió un error</h3>
+                <p id="errorMessage">No se pudo enviar el formulario. Por favor intenta nuevamente.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
+    
+    <!-- Modal de validación -->
+    <div class="modal" id="validationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Formulario Incompleto</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="warning-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3>Faltan campos por completar</h3>
+                <p id="validationMessage">Por favor completa todos los campos requeridos antes de enviar el formulario.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <!-- Modal de ayuda -->
+    <div class="modal" id="helpModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>¿Necesitas Ayuda?</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Guía para completar el formulario</h3>
+                <p>Por favor completa todos los campos marcados como requeridos (*).</p>
+                <ul class="help-list">
+                    <li><i class="fas fa-check-circle"></i> Proporciona información verídica y actualizada</li>
+                    <li><i class="fas fa-check-circle"></i> Revisa que tu correo electrónico esté correctamente escrito</li>
+                    <li><i class="fas fa-check-circle"></i> Asegúrate de aceptar los términos y condiciones</li>
+                    <li><i class="fas fa-check-circle"></i> Si tienes problemas, contacta a nuestro soporte técnico</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    
+    <!-- Botón flotante de ayuda -->
+    <div class="fab" id="helpFab">
+        <i class="fas fa-question"></i>
+    </div>
+    
+    <script src="modal.js"></script>
+</body>
+</html>
