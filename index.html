@@ -27,20 +27,20 @@
 
                <form id="registrationForm">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://registrador-de-datos.netlify.app/">
+                <input type="hidden" name="_next" value="#">
 
 
                 <div class="form-row">
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required>
+                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" ">
                             <label class="floating-label">Nombre(s)</label>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="lastName" name="lastName" class="form-control" placeholder=" " required>
+                            <input type="text" id="lastName" name="lastName" class="form-control" placeholder=" ">
                             <label class="floating-label">Apellidos</label>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                     <div class="input-icon">
                         <i class="fas fa-envelope"></i>
                         <div class="floating-label-group">
-                            <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                            <input type="email" id="email" name="email" class="form-control" placeholder=" ">
                             <label class="floating-label">Correo Electrónico</label>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="input-icon">
                         <i class="fas fa-phone"></i>
                         <div class="floating-label-group">
-                            <input type="tel" id="phone" name="phone" class="form-control" placeholder=" " required>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder=" ">
                             <label class="floating-label">Teléfono</label>
                         </div>
                     </div>
@@ -72,14 +72,14 @@
                 <div class="form-row">
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="number" id="age" name="age" class="form-control" placeholder=" " min="18" max="100" required>
+                            <input type="number" id="age" name="age" class="form-control" placeholder=" " min="18" max="100">
                             <label class="floating-label">Edad</label>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <select id="gender" name="gender" class="form-control" required>
+                            <select id="gender" name="gender" class="form-control">
                                 <option value="" disabled selected></option>
                                 <option value="masculino">Masculino</option>
                                 <option value="femenino">Femenino</option>
@@ -95,7 +95,7 @@
                     <div class="input-icon">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="floating-label-group">
-                            <input type="text" id="address" name="address" class="form-control" placeholder=" " required>
+                            <input type="text" id="address" name="address" class="form-control" placeholder=" ">
                             <label class="floating-label">Dirección</label>
                         </div>
                     </div>
@@ -104,14 +104,14 @@
                 <div class="form-row">
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="neighborhood" name="neighborhood" class="form-control" placeholder=" " required>
+                            <input type="text" id="neighborhood" name="neighborhood" class="form-control" placeholder=" ">
                             <label class="floating-label">Barrio/Colonia</label>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="city" name="city" class="form-control" placeholder=" " required>
+                            <input type="text" id="city" name="city" class="form-control" placeholder=" ">
                             <label class="floating-label">Ciudad</label>
                         </div>
                     </div>
@@ -120,14 +120,14 @@
                 <div class="form-row">
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="state" name="state" class="form-control" placeholder=" " required>
+                            <input type="text" id="state" name="state" class="form-control" placeholder=" ">
                             <label class="floating-label">Estado</label>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="floating-label-group">
-                            <input type="text" id="zipCode" name="zipCode" class="form-control" placeholder=" " required>
+                            <input type="text" id="zipCode" name="zipCode" class="form-control" placeholder=" ">
                             <label class="floating-label">Código Postal</label>
                         </div>
                     </div>
@@ -195,13 +195,14 @@
                 
                 <div class="checkbox-group">
                     <label class="checkbox-label">
-                        <input type="checkbox" id="terms" name="terms" required>
+                        <input type="checkbox" id="terms" name="terms">
                         <span class="checkmark"></span>
                         Acepto los términos y condiciones y la política de privacidad
                     </label>
                 </div>
                 
                 <button type="submit" class="btn">Enviar Registro</button>
+                   
             </form>
         </div>
     </div>
@@ -337,6 +338,8 @@
     <div class="fab" id="helpFab">
         <i class="fas fa-question"></i>
     </div>
+
+
     
     <script src="modal.js"></script>
 </body>
