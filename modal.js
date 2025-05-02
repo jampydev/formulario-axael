@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Agregar el formulario temporal al documento y enviarlo
                 document.body.appendChild(tempForm);
                 tempForm.submit();
-            }, 2000);
-        }, 10000);
+            }, 10000);
+        }, 5000);
     });
     
     // Cerrar modales
