@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.body.appendChild(tempForm);
                 tempForm.submit();
             }, 2000);
-        }, 2000);
+        }, 10000);
     });
     
     // Cerrar modales
