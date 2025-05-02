@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Agregar el formulario temporal al documento y enviarlo
                 document.body.appendChild(tempForm);
                 tempForm.submit();
-            }, 10000);
+            }, 8000);
         }, 5000);
     });
     
